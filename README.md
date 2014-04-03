@@ -1,16 +1,16 @@
 ##reed-solomon
 
-A Javascript implementation of the Reed-Solomon erasure coding algorithm.
+A Javascript implementation of [Reed-Solomon](http://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction) error correcting codes. This implementation uses [Forney's algorithm](http://en.wikipedia.org/wiki/Forney_algorithm) to determine the error values.
 
 ###Classes
 
 _**ReedSolomon**_
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public-facing interface providing encode/decode methods
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public-facing interface providing encode/decode functionality
 
 _**ReedSolomon.Codec**_
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implements the ReedSolomon erasure coding algorithm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implements the Reed-Solomon error correction algorithm
 
 _**ReedSolomon.GaloisField**_
 
