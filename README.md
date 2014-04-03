@@ -5,13 +5,20 @@ A Javascript implementation of the Reed-Solomon erasure coding algorithm.
 ###Classes
 
 _**ReedSolomon**_
-    Public-facing interface providing encode/decode methods.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public-facing interface providing encode/decode methods
 
 _**ReedSolomon.Codec**_
-    Implements the ReedSolomon erasure coding algorithm.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implements the ReedSolomon erasure coding algorithm
 
 _**ReedSolomon.GaloisField**_
-    Implements a Galois field GF(p^n) over p = 2
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implements a Galois field GF(p^n) over p = 2
+
+_**ReedSolomon.Utils**_
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implements string and array manipulation methods
 
 ###Configuration
 
