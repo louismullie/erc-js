@@ -314,7 +314,7 @@ ReedSolomon.Codec = Class.extend({
 
     for (var i = 0; i < pos.length; i++) {
       
-      var x = this.gf.gfExp(nMess - 1 - pos[i]);
+      var x = this.gf.gfExp[nMess - 1 - pos[i]];
       
       for (var j = 0; j < fsynd.length - 1; j++) {
         fsynd[j] = this.gf.mul(fsynd[j], x) ^ fsynd[j + 1]
