@@ -196,7 +196,7 @@ ReedSolomon.Codec = Class.extend({
   },
 
   encodeMsg: function (msgIn, nSym) {
-
+    nSym = +nSym
     if (msgIn.length + nSym > 255)
       throw 'Message too long.';
 
