@@ -14,7 +14,7 @@ var ReedSolomon = Class.extend({
     
     for (var i = 0; i < data.length; i += chunkSize) {
       var chunk = data.slice(i, i + chunkSize);
-      enc = enc.concat(this.codec.encodeMsg(chunk, this.nSym))
+      enc = enc.concat(this.codec.encodeMsg(chunk, +this.nSym))
     }
     
     return enc;
@@ -27,7 +27,7 @@ var ReedSolomon = Class.extend({
     
     for (var i = 0; i < data.length; i += 255) {
       var chunk = data.slice(i, i+255);
-      dec = dec.concat(this.codec.correctMsg(chunk, this.nSym));
+      dec = dec.concat(this.codec.correctMsg(chunk, +this.nSym));
     }
     
     return ReedSolomon.Utils.pack(dec);
