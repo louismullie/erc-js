@@ -1,8 +1,8 @@
-##reed-solomon
+## reed-solomon
 
 A Javascript implementation of [Reed-Solomon](http://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction) error correcting codes. This implementation uses [Forney's algorithm](http://en.wikipedia.org/wiki/Forney_algorithm) to determine the error values.
 
-###Classes
+### Classes
 
 _**ReedSolomon**_
 
@@ -20,12 +20,12 @@ _**ReedSolomon.Utils**_
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implements string and array manipulation methods
 
-###Configuration
+### Configuration
 
 The `ReedSolomon` constructor accepts the length of a codeword `n` as a parameter.
 The code will have error correcting power `(n-k)/2`, where `k` is the message length.
 
-###Usage
+### Usage
   
 ```javascript
 // n is the length of a codeword
@@ -34,7 +34,7 @@ var enc = rs.encode('hello world');
 var msg = rs.decode(enc);
 ```
 
-###Dependencies
+### Dependencies
 
 Depends on `class.js` (included in this repository under the `lib/` directory).
 
