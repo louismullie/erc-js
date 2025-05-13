@@ -38,6 +38,6 @@ var msg = rs.decode(enc);
 
 Depends on `class.js` (included in this repository under the `lib/` directory).
 
-###License
+### License
 
 This code is licensed under the GPL v3.
